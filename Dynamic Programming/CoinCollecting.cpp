@@ -20,7 +20,7 @@ int main() {
     {
         for (int i = 0; i < n; i++)
         {
-            if (j == 0) {
+            if (j == 0) { //initial
                 dp[i][j] = arr[i][j];
             }
             else if (i == 0) { //first row
