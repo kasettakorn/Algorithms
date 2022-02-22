@@ -6,5 +6,6 @@
 - Dynamic Programming
 - Greedy Algorithm
 - Graph Traversal
+- Heap Hash
 - Efficiency
 
