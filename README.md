@@ -1,6 +1,6 @@
 <p align="center">
   <a href="" rel="noopener">
- <img src="https://user-images.githubusercontent.com/36933333/155161284-817ce5be-9240-4331-8b15-82cda6db9b3c.png" alt="Project logo" width="550"></a>
+ <img src="https://user-images.githubusercontent.com/36933333/155161284-817ce5be-9240-4331-8b15-82cda6db9b3c.png" alt="Project logo" width="700"></a>
 </p>
 <h3 align="center">Design and Analysis of Algorithms</h3>
 
