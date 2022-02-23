@@ -42,7 +42,7 @@ int main()
             m++;
         }
         if(c[0] == "o") break;
-        else if(c[0] == "p") printArray(sortarr, n);
+        else if(c[0] == "p") printArray(arr, n);
         else if(c[0] == "s") binary_search(sortarr, 0, n-1, stoi(c[1]));
         else {
             arr[n] = stoi(c[0]);
