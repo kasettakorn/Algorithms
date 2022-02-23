@@ -47,8 +47,8 @@ int main()
         else {
             arr[n] = stoi(c[0]);
             sortarr[n] = stoi(c[0]);
-            sort(sortarr, sortarr+n);
             n++;
+            sort(sortarr, sortarr+n);
         }
 
     }
