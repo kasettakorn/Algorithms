@@ -34,4 +34,4 @@ Explain problem statement and implement in Algorihms courses.
 ## 🎉 Acknowledgments <a name = "acknowledgments"></a>
 
 - Department of Computer and Information Sciences | KMUTNB
-- Reference | Thailand Olympiad in Informatics 
+- Auto Judge | Thailand Olympiad in Informatics 2018
