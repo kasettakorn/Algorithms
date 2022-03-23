@@ -20,7 +20,7 @@ void bubble_sort(lli arr[], lli n) {
 }
 
 int main() {
-    lli arr[10000], n=0;
+   /* lli arr[10000], n=0;
     while(true) {
         string str;
         cin >> str;
@@ -34,7 +34,11 @@ int main() {
             n++;
         }
 
-    }
+    }*/
+    
+      int arr[] = {2,7,5,4,1,10,8,11,36,77}, n=10;
+  XXX(arr, n);
+  printArray(arr, n);
     return 0;
 }
 
