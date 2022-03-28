@@ -35,9 +35,6 @@ int matrix_chain(int arr[], int n) {
         for(int i=0; i<n-k; i++) {
             int MIN = 99999;
             for(int j=k; j>0; j--) {
-                if (k == 3) {
-                    cout << k << " " << i << " " << j << endl;
-                }
                 if(dp[i][i+(j-1)] + dp[i+j][i+k] + (arr[i]*arr[i+j]*arr[i+(k+1)]) < MIN) {
                     MIN = dp[i][i+(j-1)] + dp[i+j][i+k] + (arr[i]*arr[i+j]*arr[i+(k+1)]);
                 }
