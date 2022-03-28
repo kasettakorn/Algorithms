@@ -41,8 +41,6 @@ int matrix_chain(int arr[], int n) {
                          dp[i][i] + dp[i+1][i+4] + (arr[i]*arr[i+1]*arr[i+5]))));
     }
 
-
-
 */
     //calculate N matrices
     for(int k=1; k<n; k++) {
