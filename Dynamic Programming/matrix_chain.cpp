@@ -16,6 +16,11 @@ int matrix_chain(int arr[], int n) {
     }
 
     //calculate 3 matrices
+    /*
+        #1 (A1 x A2) x A3 p0p2p3
+        #2  A1 x (A2 x A3) p0p1p3
+        
+    /*
     for(int i=0; i<n-2; i++) {
         dp[i][i+2] = min(dp[i][i+1] + dp[i+2][i+2] + (arr[i]*arr[i+2]*arr[i+3]),
                          dp[i][i] + dp[i+1][i+2] + (arr[i]*arr[i+1]*arr[i+3]));
@@ -27,6 +32,15 @@ int matrix_chain(int arr[], int n) {
                      min(dp[i][i+1] + dp[i+2][i+3] + (arr[i]*arr[i+2]*arr[i+4]),
                          dp[i][i] + dp[i+1][i+3] + (arr[i]*arr[i+1]*arr[i+4])));
     }
+    
+    //calculate 5 matrices
+    for(int i=0; i<n-4; i++) {
+        dp[i][i+4] = min(dp[i][i+3] + dp[i+4][i+4] + (arr[i]*arr[i+4]*arr[i+5]),
+                     min(dp[i][i+2] + dp[i+3][i+4] + (arr[i]*arr[i+3]*arr[i+5]),
+                     min(dp[i][i+1] + dp[i+2][i+4] + (arr[i]*arr[i+2]*arr[i+5]),
+                         dp[i][i] + dp[i+1][i+4] + (arr[i]*arr[i+1]*arr[i+5]))));
+    }
+
 
 
 */
