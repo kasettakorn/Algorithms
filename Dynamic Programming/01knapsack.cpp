@@ -51,3 +51,50 @@ int main() {
     return 0;
     
 }
+
+/*
+#include <iostream>
+#include <algorithm>
+using namespace std;
+void knapsack(int weight[], int value[], int W) {
+    int n = 4;
+    int dp[n+1][W+1];
+    for (int i = 0; i <= n; i++)
+    {
+        for (int j = 0; j <= W; j++)
+        {
+            if (i == 0 || j == 0) {
+                dp[i][j] = 0;
+            }
+            else if (weight[i-1] > j) {
+                dp[i][j] = dp[i-1][j];
+            }
+            else {
+                dp[i][j] = max(dp[i-1][j], value[i-1]+dp[i-1][j-weight[i-1]]);
+            }
+        }
+
+    }
+
+    for (int i = 0; i <= n; i++)
+    {
+        for (int j = 0; j <= W; j++)
+        {
+            cout << dp[i][j] << " ";
+        }
+        cout << endl;
+
+    }
+
+}
+int main() {
+    int bag = 7;
+    int weight[] = {1,3,4,5};
+    int value[] = {1,4,5,7};
+
+    knapsack(weight, value, bag);
+
+    return 0;
+
+}
+*/
